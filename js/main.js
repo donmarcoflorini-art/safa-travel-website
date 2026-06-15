@@ -1,0 +1,1 @@
+console.log("Safa Travel website loaded.");
