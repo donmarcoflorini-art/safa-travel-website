@@ -1670,3 +1670,179 @@ a {
     padding: 28px;
   }
 }
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 56px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-weight: 700;
+  color: #0f5132;
+  white-space: nowrap;
+}
+/* Logo test adjustment */
+
+.site-header .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  height: 44px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.site-header .logo-text {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f5132;
+}
+/* Safa brand logo */
+
+.logo.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  direction: ltr;
+}
+
+.brand-icon {
+  width: 58px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.05;
+}
+
+.brand-name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f5132;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+.brand-subtitle {
+  font-family: "Tajawal", "Cairo", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f5132;
+  direction: rtl;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+/* Mobile logo adjustment */
+@media (max-width: 620px) {
+  .brand-icon {
+    width: 46px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-subtitle {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand-subtitle {
+    display: none;
+  }
+
+  .brand-icon {
+    width: 42px;
+  }
+
+  .brand-name {
+    font-size: 17px;
+  }
+}
+/* Final header logo adjustment */
+
+.site-header {
+  background: #ffffff;
+}
+
+.header-content {
+  min-height: 68px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.logo.brand-logo {
+  gap: 10px;
+}
+
+.brand-icon {
+  width: 68px;
+}
+
+.brand-name {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.brand-subtitle {
+  font-size: 13px;
+  margin-top: 4px;
+  line-height: 1;
+}
+
+/* Keep mobile clean */
+@media (max-width: 620px) {
+  .header-content {
+    min-height: 58px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .brand-icon {
+    width: 52px;
+  }
+
+  .brand-name {
+    font-size: 19px;
+  }
+
+  .brand-subtitle {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand-icon {
+    width: 46px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+}
