@@ -1,1 +1,1 @@
-console.log("Safa Travel website loaded.");
+console.log("Safa website loaded.");

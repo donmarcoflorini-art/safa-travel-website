@@ -1,7 +1,7 @@
 ﻿{
-  "name": "Safa Travel",
-  "short_name": "Safa Travel",
-  "description": "Safa Travel - Hajj and Umrah trips from Sweden",
+  "name": "Safa",
+  "short_name": "Safa",
+  "description": "Safa - Hajj and Umrah trips from Sweden",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
