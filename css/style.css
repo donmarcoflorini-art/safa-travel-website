@@ -1059,4 +1059,33 @@ p {
   .home-why-image img {
     height: 280px;
   }
+}/* =========================================================
+   Home Services Hover Effects
+   ========================================================= */
+
+.home-service-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.home-service-card img {
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.home-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 26px 70px rgba(15, 81, 50, 0.18);
+  border-color: rgba(15, 81, 50, 0.24);
+}
+
+.home-service-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.92);
+}
+
+.home-service-card:hover h3 {
+  color: var(--green-dark);
+}
+
+.home-service-card:hover a {
+  color: var(--green-dark);
 }
