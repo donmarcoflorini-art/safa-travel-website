@@ -3004,4 +3004,308 @@ p,
     padding: 11px 15px;
     font-size: 13px;
   }
+}/* =========================================================
+   Safa - FINAL Inner Pages Layout Repair
+   Paste this at the VERY VERY END of css/style.css
+   ========================================================= */
+
+/* General inner page hero cleanup */
+.page-hero {
+  padding: 58px 0 !important;
+}
+
+.page-hero h1 {
+  max-width: 900px !important;
+  margin: 0 0 16px !important;
+  font-size: clamp(34px, 4.6vw, 58px) !important;
+  line-height: 1.25 !important;
+}
+
+.page-hero p {
+  max-width: 800px !important;
+  margin-bottom: 0 !important;
+}
+
+/* Kill the giant empty spaces on inner pages */
+.content-section,
+.about-section,
+.contact-section,
+.contact-intro-section,
+.contact-methods-section,
+.prepare-section,
+.program-section,
+.why-section,
+.steps-section,
+.final-cta {
+  padding-top: 48px !important;
+  padding-bottom: 48px !important;
+}
+
+/* Trust strip should not create huge visual gaps */
+.trust-strip {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.trust-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.trust-grid div {
+  min-height: 108px !important;
+  padding: 24px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.trust-grid strong {
+  font-size: 19px !important;
+  line-height: 1.35 !important;
+  margin-bottom: 6px !important;
+}
+
+.trust-grid span {
+  max-width: 240px !important;
+  font-size: 14px !important;
+  line-height: 1.65 !important;
+}
+
+/* Fix all two-column sections */
+.two-columns,
+.contact-balanced-grid,
+.about-section .two-columns,
+.content-section .two-columns,
+.why-section .two-columns {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px) !important;
+  gap: 54px !important;
+  align-items: center !important;
+}
+
+/* Prevent columns from exploding */
+.two-columns > div,
+.contact-balanced-grid > div,
+.about-section .two-columns > div,
+.content-section .two-columns > div,
+.why-section .two-columns > div {
+  min-width: 0 !important;
+}
+
+/* Headings balance */
+.content-section h2,
+.about-section h2,
+.contact-intro-section h2,
+.contact-methods-section h2,
+.why-section h2,
+.program-section h2 {
+  max-width: 760px !important;
+  margin-top: 0 !important;
+  margin-bottom: 18px !important;
+  font-size: clamp(34px, 4vw, 48px) !important;
+  line-height: 1.28 !important;
+  text-wrap: balance !important;
+}
+
+/* Paragraph cleanup */
+.content-section p,
+.about-section p,
+.contact-intro-section p,
+.contact-methods-section p,
+.why-section p,
+.program-section p {
+  max-width: 760px !important;
+  font-size: 17px !important;
+  line-height: 1.9 !important;
+}
+
+/* Contact page specific */
+.contact-methods-section {
+  background: #ffffff !important;
+}
+
+.contact-info-list {
+  display: grid !important;
+  gap: 18px !important;
+}
+
+.contact-info-list .featured-card,
+.ready-message-card {
+  min-height: auto !important;
+  padding: 28px !important;
+}
+
+.ready-message-card p {
+  line-height: 2 !important;
+}
+
+/* Fix contact cards being too tall and weird */
+.service-card.featured-card {
+  height: auto !important;
+}
+
+.featured-card p {
+  min-height: 0 !important;
+}
+
+/* Journey card in contact top section */
+.contact-details-card,
+.journey-card {
+  min-height: auto !important;
+}
+
+.contact-details-card {
+  min-height: 420px !important;
+}
+
+/* About page specific cleanup */
+.about-section {
+  background: #f8f5ef !important;
+}
+
+.about-card {
+  height: auto !important;
+}
+
+/* Lists */
+.check-list {
+  margin-top: 22px !important;
+  padding-right: 22px !important;
+}
+
+.check-list li {
+  margin-bottom: 10px !important;
+  line-height: 1.8 !important;
+}
+
+/* Floating WhatsApp less annoying */
+.floating-whatsapp {
+  z-index: 9999 !important;
+}
+
+/* Tablet */
+@media (max-width: 920px) {
+  .page-hero {
+    padding: 48px 0 !important;
+  }
+
+  .content-section,
+  .about-section,
+  .contact-section,
+  .contact-intro-section,
+  .contact-methods-section,
+  .prepare-section,
+  .program-section,
+  .why-section,
+  .steps-section,
+  .final-cta {
+    padding-top: 42px !important;
+    padding-bottom: 42px !important;
+  }
+
+  .two-columns,
+  .contact-balanced-grid,
+  .about-section .two-columns,
+  .content-section .two-columns,
+  .why-section .two-columns {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .content-section h2,
+  .about-section h2,
+  .contact-intro-section h2,
+  .contact-methods-section h2,
+  .why-section h2,
+  .program-section h2 {
+    font-size: 34px !important;
+  }
+
+  .contact-details-card {
+    min-height: auto !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .page-hero {
+    padding: 42px 0 !important;
+  }
+
+  .page-hero h1 {
+    font-size: 31px !important;
+  }
+
+  .page-hero p {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+  }
+
+  .content-section,
+  .about-section,
+  .contact-section,
+  .contact-intro-section,
+  .contact-methods-section,
+  .prepare-section,
+  .program-section,
+  .why-section,
+  .steps-section,
+  .final-cta {
+    padding-top: 34px !important;
+    padding-bottom: 34px !important;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .trust-grid div {
+    min-height: auto !important;
+    padding: 18px 16px !important;
+    border-left: 0 !important;
+    border-bottom: 1px solid #e5dfd3 !important;
+  }
+
+  .content-section h2,
+  .about-section h2,
+  .contact-intro-section h2,
+  .contact-methods-section h2,
+  .why-section h2,
+  .program-section h2 {
+    font-size: 29px !important;
+    line-height: 1.32 !important;
+  }
+
+  .content-section p,
+  .about-section p,
+  .contact-intro-section p,
+  .contact-methods-section p,
+  .why-section p,
+  .program-section p {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+  }
+
+  .service-card,
+  .featured-card,
+  .ready-message-card,
+  .about-card,
+  .program-card {
+    padding: 22px !important;
+    border-radius: 22px !important;
+  }
+
+  .floating-whatsapp {
+    left: 14px !important;
+    bottom: 14px !important;
+    padding: 10px 14px !important;
+    font-size: 13px !important;
+  }
 }
