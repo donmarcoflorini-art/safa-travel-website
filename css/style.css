@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: var(--font-main);
   background: #f8f5ef;
   color: #1f2933;
   line-height: 1.8;
@@ -1735,7 +1737,7 @@ a {
 }
 
 .brand-name {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-brand);
   font-size: 22px;
   font-weight: 700;
   color: #0f5132;
@@ -1744,7 +1746,7 @@ a {
 }
 
 .brand-subtitle {
-  font-family: "Tajawal", "Cairo", Arial, sans-serif;
+  font-family: var(--font-main);
   font-size: 13px;
   font-weight: 700;
   color: #0f5132;
@@ -2621,3 +2623,136 @@ main,
   margin-left: auto;
   margin-right: auto;
 }
+
+/* =========================================================
+   Safa - Cairo Font Control
+   Paste kept at the VERY END so it overrides older rules
+   ========================================================= */
+
+:root {
+  --font-main: 'Cairo', Tahoma, Arial, sans-serif;
+  --font-brand: Georgia, "Times New Roman", serif;
+}
+
+html,
+body {
+  font-family: var(--font-main);
+}
+
+body {
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+span,
+strong,
+small,
+label,
+input,
+textarea,
+select,
+button {
+  font-family: var(--font-main);
+}
+
+h1,
+.hero h1,
+.page-hero h1,
+.hero-video-content h1 {
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+h2,
+h3,
+.section-heading h2,
+.why-section h2,
+.steps-section h2,
+.final-cta h2,
+.program-section h2,
+.about-section h2,
+.contact-main-card h2,
+.intro-video-text h2 {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+p,
+.content-section p,
+.program-section p,
+.about-section p,
+.contact-main-card p,
+.hero-video-content .hero-text p,
+.page-hero p,
+.section-heading p {
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.main-nav,
+.main-nav a,
+.nav-links a,
+.mobile-menu a,
+.btn,
+.hero-actions a,
+.hero-buttons a,
+.whatsapp-btn,
+.floating-whatsapp,
+.cta-button,
+.large-btn {
+  font-family: var(--font-main);
+  font-weight: 700;
+}
+
+.service-card,
+.feature-card,
+.featured-card,
+.step-card,
+.info-box,
+.about-card,
+.contact-card,
+.contact-main-card,
+.contact-info-card,
+.program-card,
+.cta-box,
+.final-cta-box {
+  font-family: var(--font-main);
+}
+
+.brand-text,
+.brand-subtitle {
+  font-family: var(--font-main);
+}
+
+/* Keep the English Safa wordmark elegant instead of turning it into plain UI text */
+.brand-name {
+  font-family: var(--font-brand);
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 16px;
+  }
+
+  p,
+  .content-section p,
+  .program-section p,
+  .about-section p,
+  .contact-main-card p,
+  .hero-video-content .hero-text p,
+  .page-hero p,
+  .section-heading p {
+    line-height: 1.8;
+  }
+}
+
