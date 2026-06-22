@@ -1846,3 +1846,735 @@ a {
     display: none;
   }
 }
+/* =========================================================
+   Safa Home Images Update
+   Add this block at the END of css/style.css
+   ========================================================= */
+
+.image-hero {
+  position: relative;
+  padding: 90px 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(212, 165, 75, 0.20), transparent 35%),
+    linear-gradient(135deg, #0f5a3a 0%, #083b28 100%);
+  color: #ffffff;
+}
+
+.hero-image-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  align-items: center;
+  gap: 44px;
+}
+
+.hero-image-card {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 390px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.hero-image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.30), transparent 55%);
+  pointer-events: none;
+}
+
+.hero-image-card img,
+.intro-video-cover img,
+.service-card-image,
+.why-visual > img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image-card img {
+  height: 100%;
+  min-height: 390px;
+}
+
+.intro-video-cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 340px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+.intro-video-cover img {
+  height: 340px;
+}
+
+.intro-video-cover-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.18));
+}
+
+.intro-video-cover-overlay strong {
+  font-size: 1.35rem;
+}
+
+.intro-video-cover-overlay small {
+  opacity: 0.92;
+}
+
+.service-card-with-image {
+  overflow: hidden;
+  padding: 0;
+}
+
+.service-card-image {
+  height: 210px;
+  border-radius: 0;
+}
+
+.service-card-body {
+  padding: 26px;
+}
+
+.why-image-layout {
+  align-items: center;
+}
+
+.why-visual {
+  position: relative;
+}
+
+.why-visual > img {
+  height: 470px;
+  border-radius: 28px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.16);
+}
+
+.why-floating-card {
+  position: absolute;
+  right: 22px;
+  left: 22px;
+  bottom: 22px;
+  max-width: none;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 900px) {
+  .image-hero {
+    padding: 64px 0;
+  }
+
+  .hero-image-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-image-card {
+    min-height: 290px;
+  }
+
+  .hero-image-card img {
+    min-height: 290px;
+  }
+
+  .intro-video-cover,
+  .intro-video-cover img {
+    min-height: 260px;
+    height: 260px;
+  }
+
+  .why-visual > img {
+    height: 360px;
+  }
+
+  .why-floating-card {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    margin-top: 18px;
+  }
+
+  .service-card-image {
+    height: 190px;
+  }
+}
+
+@media (max-width: 560px) {
+  .image-hero {
+    padding: 48px 0;
+  }
+
+  .hero-image-card,
+  .hero-image-card img {
+    min-height: 240px;
+  }
+
+  .service-card-body {
+    padding: 22px;
+  }
+
+  .why-visual > img {
+    height: 300px;
+  }
+}
+/* =========================================================
+   Safa - Fix Why Section Overlap
+   Paste this at the VERY END of css/style.css
+   ========================================================= */
+
+.why-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-image-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 520px);
+  align-items: center;
+  gap: 56px;
+}
+
+.why-visual {
+  position: relative;
+  min-width: 0;
+}
+
+.why-visual > img {
+  width: 100%;
+  height: 470px;
+  display: block;
+  object-fit: cover;
+  border-radius: 28px;
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.16);
+}
+
+.why-floating-card {
+  position: absolute;
+  right: 22px;
+  left: 22px;
+  bottom: 22px;
+  width: auto;
+  max-width: none;
+  min-height: auto;
+  margin: 0;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #123126;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.16);
+  z-index: 2;
+}
+
+.why-floating-card .journey-card-header {
+  margin-bottom: 16px;
+}
+
+.why-floating-card .journey-card-header span,
+.why-floating-card .journey-card-header strong {
+  color: #0f5a3a;
+}
+
+.why-floating-card .journey-timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.why-floating-card .journey-timeline > div {
+  min-height: auto;
+  margin: 0;
+  padding: 12px;
+  border-radius: 16px;
+  background: #f7f4ec;
+}
+
+.why-floating-card .journey-timeline span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  background: #f6c515;
+  color: #083b28;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.why-floating-card .journey-timeline p {
+  margin: 0;
+  color: #123126;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .why-image-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why-visual > img {
+    height: 360px;
+  }
+
+  .why-floating-card {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .why-visual > img {
+    height: 280px;
+  }
+
+  .why-floating-card {
+    padding: 18px;
+  }
+
+  .why-floating-card .journey-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================================
+   Safa - Final Why Section Visual Tuning
+   Paste this at the VERY END of css/style.css
+   ========================================================= */
+
+.why-section .why-image-layout {
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  gap: 64px;
+}
+
+.why-section .why-visual {
+  position: relative;
+  max-width: 560px;
+}
+
+.why-section .why-visual > img {
+  height: 460px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+}
+
+.why-section .why-floating-card {
+  position: absolute;
+  right: 24px;
+  left: auto;
+  bottom: 24px;
+  width: min(78%, 410px);
+  max-width: 410px;
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+}
+
+.why-section .why-floating-card .journey-card-header {
+  margin-bottom: 14px;
+}
+
+.why-section .why-floating-card .journey-card-header span {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f5a3a;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.why-section .why-floating-card .journey-card-header strong {
+  display: block;
+  color: #0f5a3a;
+  font-size: 1.45rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+
+.why-section .why-floating-card .journey-timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.why-section .why-floating-card .journey-timeline > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: auto;
+  padding: 10px;
+  border-radius: 14px;
+  background: #f7f4ec;
+}
+
+.why-section .why-floating-card .journey-timeline span {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  border-radius: 50%;
+  background: #f6c515;
+  color: #083b28;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.why-section .why-floating-card .journey-timeline p {
+  margin: 0;
+  color: #123126;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .why-section .why-image-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why-section .why-visual {
+    max-width: 100%;
+  }
+
+  .why-section .why-visual > img {
+    height: 360px;
+  }
+
+  .why-section .why-floating-card {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: none;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .why-section .why-visual > img {
+    height: 280px;
+  }
+
+  .why-section .why-floating-card {
+    padding: 18px;
+  }
+
+  .why-section .why-floating-card .journey-card-header strong {
+    font-size: 1.25rem;
+  }
+
+  .why-section .why-floating-card .journey-timeline {
+    grid-template-columns: 1fr;
+  }
+}/* =========================================================
+   Safa - Why Section Glass Card Final
+   Paste at the VERY END of css/style.css
+   ========================================================= */
+
+.why-section .why-visual {
+  position: relative;
+  max-width: 560px;
+  overflow: visible;
+}
+
+.why-section .why-visual > img {
+  width: 100%;
+  height: 460px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+}
+
+.why-section .why-floating-card {
+  position: absolute;
+  right: 22px;
+  left: auto;
+  bottom: 22px;
+  width: min(70%, 360px);
+  padding: 18px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+.why-section .why-floating-card .journey-card-header {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.why-section .why-floating-card .journey-card-header span {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f5a3a;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.why-section .why-floating-card .journey-card-header strong {
+  display: block;
+  color: #0f5a3a;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  font-weight: 900;
+}
+
+.why-section .why-floating-card .journey-timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.why-section .why-floating-card .journey-timeline > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: 14px;
+  background: rgba(247, 244, 236, 0.78);
+}
+
+.why-section .why-floating-card .journey-timeline span {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  border-radius: 50%;
+  background: #f6c515;
+  color: #083b28;
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.why-section .why-floating-card .journey-timeline p {
+  margin: 0;
+  color: #123126;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .why-section .why-image-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why-section .why-visual {
+    max-width: 100%;
+  }
+
+  .why-section .why-visual > img {
+    height: 360px;
+  }
+
+  .why-section .why-floating-card {
+    position: relative;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    width: 100%;
+    max-width: none;
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (max-width: 560px) {
+  .why-section .why-visual > img {
+    height: 280px;
+  }
+
+  .why-section .why-floating-card {
+    padding: 16px;
+  }
+
+  .why-section .why-floating-card .journey-card-header strong {
+    font-size: 1.05rem;
+  }
+
+  .why-section .why-floating-card .journey-timeline {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================================
+   Safa - Why Section Final Glass Card
+   ========================================================= */
+
+.why-section .why-image-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 520px);
+  gap: 64px;
+  align-items: center;
+}
+
+.why-section .why-visual {
+  position: relative;
+  max-width: 560px;
+  overflow: visible;
+}
+
+.why-section .why-visual > img {
+  width: 100%;
+  height: 460px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+}
+
+.why-section .why-floating-card {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  bottom: 22px;
+  transform: translateX(-50%);
+
+  width: min(78%, 380px);
+  padding: 18px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.14);
+}
+
+.why-section .why-floating-card .journey-card-header {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.why-section .why-floating-card .journey-card-header span {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f5a3a;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.why-section .why-floating-card .journey-card-header strong {
+  display: block;
+  color: #0f5a3a;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  font-weight: 900;
+}
+
+.why-section .why-floating-card .journey-timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.why-section .why-floating-card .journey-timeline > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 10px;
+  border-radius: 14px;
+  background: rgba(247, 244, 236, 0.78);
+}
+
+.why-section .why-floating-card .journey-timeline span {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  border-radius: 50%;
+  background: #f6c515;
+  color: #083b28;
+  font-size: 0.68rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-section .why-floating-card .journey-timeline p {
+  margin: 0;
+  color: #123126;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .why-section .why-image-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .why-section .why-visual {
+    max-width: 100%;
+  }
+
+  .why-section .why-visual > img {
+    height: 360px;
+  }
+
+  .why-section .why-floating-card {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+
+    width: 100%;
+    max-width: none;
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (max-width: 560px) {
+  .why-section .why-visual > img {
+    height: 280px;
+  }
+
+  .why-section .why-floating-card {
+    padding: 16px;
+  }
+
+  .why-section .why-floating-card .journey-card-header strong {
+    font-size: 1.05rem;
+  }
+
+  .why-section .why-floating-card .journey-timeline {
+    grid-template-columns: 1fr;
+  }
+}
