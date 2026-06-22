@@ -862,4 +862,201 @@ p {
   .brand-subtitle {
     display: none;
   }
+}/* =========================================================
+   Home Page Clean Additions
+   Add at the END of css/style.css
+   ========================================================= */
+
+.home-hero-image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  min-height: 390px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.home-hero-image-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 390px;
+  object-fit: cover;
+}
+
+.home-video-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  min-height: 340px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.home-video-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.home-video-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.18));
+}
+
+.home-video-overlay span {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--ink);
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  font-weight: 900;
+  padding-right: 4px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.25);
+}
+
+.home-video-overlay strong {
+  display: block;
+  font-size: 24px;
+  line-height: 1.4;
+}
+
+.home-video-overlay small {
+  opacity: 0.92;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.home-service-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: var(--shadow-soft);
+}
+
+.home-service-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.home-service-card > div {
+  padding: 26px;
+}
+
+.home-service-card span {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  background: var(--green);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.home-service-card h3 {
+  color: var(--green);
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.home-service-card p {
+  color: #475467;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.home-service-card a {
+  color: var(--green);
+  font-weight: 900;
+}
+
+.home-why-image {
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border);
+  background: #ffffff;
+}
+
+.home-why-image img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+
+@media (max-width: 920px) {
+  .home-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-image-card,
+  .home-hero-image-card img {
+    min-height: 300px;
+  }
+
+  .home-video-card,
+  .home-video-card img {
+    min-height: 280px;
+    height: 280px;
+  }
+
+  .home-why-image img {
+    height: 340px;
+  }
+}
+
+@media (max-width: 620px) {
+  .home-hero-image-card,
+  .home-hero-image-card img {
+    min-height: 240px;
+  }
+
+  .home-video-card,
+  .home-video-card img {
+    min-height: 240px;
+    height: 240px;
+  }
+
+  .home-video-overlay span {
+    width: 62px;
+    height: 62px;
+    font-size: 24px;
+  }
+
+  .home-video-overlay strong {
+    font-size: 20px;
+  }
+
+  .home-service-card img {
+    height: 190px;
+  }
+
+  .home-service-card > div {
+    padding: 22px;
+  }
+
+  .home-why-image img {
+    height: 280px;
+  }
 }
