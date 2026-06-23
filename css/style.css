@@ -1139,4 +1139,26 @@ p {
     unicode-bidi: isolate;
     text-align: center;
   }
+}/* Global footer direction fix - desktop + mobile */
+.footer-bottom p,
+.footer-bottom .copyright,
+.footer-bottom .footer-copy,
+.site-footer p,
+.site-footer .copyright,
+.site-footer .footer-copy {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
+
+/* Better copyright alignment on desktop */
+.footer-bottom {
+  text-align: center;
+}
+
+/* Desktop WhatsApp button position */
+@media (min-width: 769px) {
+  .whatsapp-float {
+    bottom: 28px;
+    left: 28px;
+  }
 }
