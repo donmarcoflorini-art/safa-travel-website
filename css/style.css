@@ -1088,4 +1088,55 @@ p {
 
 .home-service-card:hover a {
   color: var(--green-dark);
+}/* Mobile polish fixes */
+@media (max-width: 768px) {
+  .site-header {
+    padding-top: 18px;
+    padding-bottom: 14px;
+  }
+
+  .logo.brand-logo {
+    margin-bottom: 16px;
+  }
+
+  .brand-icon {
+    width: 58px;
+    height: auto;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .site-nav {
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .site-nav a {
+    font-size: 15px;
+    padding: 11px 13px;
+    white-space: nowrap;
+  }
+
+  .whatsapp-float {
+    bottom: 76px;
+    left: 16px;
+    font-size: 14px;
+    padding: 12px 18px;
+    border-radius: 999px;
+  }
+
+  .footer-bottom {
+    padding-bottom: 28px;
+  }
+
+  .footer-bottom p,
+  .copyright,
+  .footer-copy {
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: center;
+  }
 }
