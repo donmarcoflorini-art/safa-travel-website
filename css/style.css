@@ -1343,3 +1343,14 @@ p {
     width: 100%;
   }
 }
+/* Fix phone number direction inside RTL layout */
+.phone-ltr,
+.header-phone,
+.footer-contact a[href^="tel:"],
+.footer-contact p.phone-ltr,
+.trust-grid .phone-ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  text-align: left;
+}
