@@ -1681,4 +1681,52 @@ body.home-page .home-hero .btn.secondary:hover {
     line-height: 1.8;
   }
 }
+.site-credit {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.site-credit a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-credit a:hover {
+  text-decoration: underline;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.site-credit {
+  margin: 0;
+  padding-top: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.site-credit a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-credit a:hover {
+  text-decoration: underline;
+}
 
